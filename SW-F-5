@@ -232,11 +232,10 @@ interface Vlan105
  no ip route-cache
 !
 ip default-gateway {{default-gateway}}
-ip http server
+no ip http server
 !
 line con 0
  login local
- speed 115200
 line vty 0 4
  exec-timeout 30 0
  login local
